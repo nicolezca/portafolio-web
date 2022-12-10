@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: fixed;
+    top: 0;
+}
+#inicio{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+header .logo{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+header .logo img{
+    width: 40px;
+    height: 40px;
+}
+
+header .navegacion-header{
+    margin-right:20px ;
+    margin-top: 20px;
+}
+
+header .navegacion-header ul{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+header .navegacion-header ul a{
+    text-decoration: none;
+}
+
+header .navegacion-header ul a li{
+    margin-inline: 15px;
+    list-style: none;
+    color: white;
+    transition: .3s;
+    font-size: 20px;
+}
+
+header .navegacion-header ul a li:hover{
+    color: gold;
+    transform: scale(1.1);
+}
+/* generalizacion de secciones */
+.secciones{
+    width: 100%;
+    height: 100vh;
+}
+
+/* espaciado entree secciones */
+
+.espacio{
+    width: 100%;
+    height: 500px;
+}
+
+/* primer seccion de bienvenida */
+.contenedor{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.image-propia{
+    margin-top: 150px;
+}
+.nombre-bienvenida{
+    margin-top: 200px;
+}
+/* contenedor de imagen */
+.image-propia{
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+}
+
+.image-propia .cont-image{
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
+}
+
+.image-propia .cont-image img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    border:5px solid goldenrod;
+    box-shadow: 0px 0px 25px goldenrod;
+}
+
+/* contenedor de titulo */
+
+.nombre-bienvenida{
+    width: 50%;
+    float: right;
+    padding:20px 0 20px 20px;
+
+}
+
+.nombre-bienvenida h1{
+    font-size: 70px;
+    color: white;
+}
+
+.nombre-bienvenida h2{
+    font-size: 60px;
+    margin-left: 30px;
+    color: white;
+}
+
+.nombre-bienvenida div{
+    width: 100%;
+    margin-top: 90px;
+}
+
+.nombre-bienvenida div p{
+    color: goldenrod;
+    font-size: 50px;
+}
+
+#text{
+    text-align: center;
+}
+
+/* segunda seccion sobre mi */
+/* parte texto */
+.texto-sobre-mi{
+    display: inline-block;
+    width: 50%;
+    margin-top: 150px;
+}
+
+.texto-sobre-mi h2{
+    color: goldenrod;
+    font-size: 35px;
+    margin-left: 25px;
+}
+
+.texto-sobre-mi p{
+    color: white;
+    margin-left: 50px;
+    width: 80%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+/* parte imagen */
+.image-sobre-mi{
+    width: 50%;
+    float: right;
+    margin-top: 200px;
+}
+
+.image-sobre-mi .cont-sobre-mi{
+    width: 50%;
+    margin-left: 25%;
+    height: 300px;
+    position: relative;
+}
+
+.cont-sobre-mi img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border:5px solid rgb(39, 38, 38);
+}
+
+.cont-sobre-mi:after{
+    content: '';
+    width: 80%;
+    position: absolute;
+    height: 90%;
+    left: -20px;
+    top: -20px;
+    background-color: goldenrod;
+    border:4px solid gray;
+    z-index: -1;
+    box-shadow: 0px 0px 25px gold;
+}
+
+
+/* tercer seccion sobre mi del progreso*/
+
+.imagen-progreso{
+    width: 50%;
+    display: inline-block;
+    margin-top: 150px;
+}
+
+.imagen-progreso .img{
+    width: 50%;
+    margin-left: 25%;
+    height: 300px;
+    position: relative;
+}
+
+.imagen-progreso .img img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border:5px solid rgb(39, 38, 38);
+}
+
+.imagen-progreso .img::after{
+    content: '';
+    width: 80%;
+    position: absolute;
+    height: 90%;
+    left: -20px;
+    top: -20px;
+    background-color: goldenrod;
+    border:4px solid gray;
+    z-index: -1;
+    box-shadow: 0px 0px 25px gold;
+}
+
+/* conteneodr de progresos */
+
+.progresos{
+    width: 50%;
+    float: right;
+    margin-top: 250px;
+}
+
+.progresos  h2{
+    color: white;
+    text-transform: uppercase;
+    display:inline-block;
+    position: relative;
+    width: 50%;
+}
+
+.progresos span{
+    color: rebeccapurple;
+    font-size: 0.8rem;
+}
+
+.barra-progreso{
+    width: 60%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.completar-barra{
+    transition: 0.5s;
+    width: var(--w);
+    height:18px;
+    background-color:goldenrod;
+    border-radius: 20px;
+    animation: Aumentar 5s ease ;
+}
+
+@keyframes Aumentar{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: var(--w);
+    }
+}
+
+/* seccion sobre los proyectos */
+
+.content-proyect{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 150px;
+    padding:0 100px;
+}
+
+.proyecto1,
+.proyecto2,
+.proyecto3{
+    width: 25%;
+    height: 300px;
+}
+
+ .proyecto1 a img,
+ .proyecto2 a img,
+ .proyecto3 a img{
+    width: 100%;
+    height: 250px;
+    border:5px solid rgb(39, 38, 38);
+    transition:.3s;
+}
+
+.proyecto1 a img:hover,
+.proyecto2 a img:hover,
+.proyecto3 a img:hover{
+    opacity: .5 ;
+    box-shadow: 0px 0px 15px goldenrod;
+}
+
+.proyecto1 h2,
+.proyecto2 h2,
+.proyecto3 h2{
+    color: gold;
+    height: 50px;
+    text-align: center;
+    letter-spacing:2px;
+}
+
+.proyecto2{
+    margin-top: 50px;
+}
+
+
+/* seccion de contacto */
+
+.titulo-contacto{
+    width: 100%;
+    margin-top: 200px;
+}
+
+.titulo-contacto h2{
+    color: gold;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    z-index: 1000;
+}
+
+.formulario-contacto{
+    width: 50%;
+    display: inline-block;
+}
+
+.formulario-contacto form{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.formulario-contacto form input{
+    width: 100%;
+    margin-block: 15px;
+    border: none;
+    background-color: black;
+    border-bottom: 1px solid gold;
+    color: white;
+    outline: none;
+    padding: 10px;
+    transition: .3s;
+}
+
+.formulario-contacto form #mensaje{
+    height: 50px;
+    background-color: rgba(25, 25,25 ,50% );
+
+}
+
+.formulario-contacto form .boton {
+    width: 40%;
+    padding: 5px 20px;
+    background-color: gold;
+    color: black;
+    box-shadow:0px 0px 20px goldenrod;
+    transition: .3s;
+}   
+
+.formulario-contacto form .boton:hover{
+    box-shadow: none;
+    color: white;
+}
+
+
+.formulario-contacto form input:focus{
+    background-color: rgba(25, 25,25 ,25% );
+}
+
+.informacion-contacto{
+    float: right;
+    width: 50%;
+    padding: 20px;
+}
+
+.informacion-contacto h3{
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.informacion-contacto .localidad{
+    margin: 20px 0;
+}
+
+.localidad p{
+    color: goldenrod;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+.contactame{
+    margin:10px 0 ;
+}
+
+.contactame p{
+    color: goldenrod;
+    letter-spacing: 2px;
+}
+
+.contactame #seguir{
+    font-size:18px ;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.contactame .redes{
+    margin-top: 15px;
+}
+
+.redes img{
+    filter: saturate(0);
+    margin-inline: 10px;
+    transition: .3s;
+}
+
+.redes img:hover{
+    z-index: 10;
+    transform: scale(1.2);
+    filter: none;
+}

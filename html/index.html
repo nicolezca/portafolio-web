@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web | Z-Destroy</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../icons/activity.svg" type="image/x-icon">
+ </head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <!-- cambiar el color de la imagen urgente a oro -->
+            <img src="../icons/activity.svg">
+        </div>
+        <nav class="navegacion-header">
+            <ul>
+                <a href="#inicio"><li>inicio</li></a>
+
+                <a href="#sobre-mi"><li>sobre mi</li></a>
+                
+                <a href="#progreso"><li>progreso</li></a>
+
+                <a href="#portfolio"><li>portfolio</li></a>
+                
+                <a href="#contacto"><li>contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+    <div id="inicio"></div>
+    <!-- seccion de bienvenida -->
+    <section class="secciones" >
+       <div class="contenedor">
+            <div class="image-propia">
+                <div class="cont-image">
+                    <img src="../img/portfolio.png" >
+                </div>
+            </div>
+            <div class="nombre-bienvenida">
+                <h1>Z-Destroy</h1>
+                <h2>Party-House</h2>
+                <div>
+                    <p>Bienvenido a mi</p>
+                    <p id="text">portafolio web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="espacio"></div>
+    
+    <!-- seccion sobre mi -->
+    <section class="secciones" id="sobre-mi">
+        <div class="contenedor">
+            <div class="texto-sobre-mi">
+                <h2>
+                    ¡sobre mi!
+                </h2>
+                <p>
+                    soy un programador web jr en busca de la creatividad y el ingenio en la programación para un aprendizaje eficaz y entretenido
+                </p>
+            </div>
+            <div class="image-sobre-mi">
+                <div class="cont-sobre-mi" >
+                    <img src="../img/portfolio.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <div class="espacio"></div>
+    
+    <!-- seccion sobre mi con progresos -->
+    <section class="secciones" id="progreso">
+        <div class="contenedor">
+            <div class="imagen-progreso">
+                <div class="img">
+                    <img src="../img/portfolio.png" alt="">
+                </div>
+            </div>
+
+            <!-- barra de progreso con trnasicion de carga -->
+            <div class="progresos">
+                <!-- contenedor de la barra -->
+                <h2>HTML</h2>
+                <span>89%</span>
+                <div class="barra-progreso">
+                    <!-- porcentaje de la barra -->
+                    <div class="completar-barra" style="--w:89%"></div>
+                </div>
+                <h2>css</h2>
+                <span>45%</span>
+                <div class="barra-progreso">
+                    <div class="completar-barra" style="--w:45%"></div>
+                </div>
+
+                <h2>JavaScript</h2>
+                <span>10%</span>
+                <div class="barra-progreso">
+                    <div class="completar-barra" style="--w:10%"></div>
+                </div>
+                <h2>Diseño</h2>
+                <span>35%</span>
+                <div class="barra-progreso">
+                    <div class="completar-barra" style="--w:35%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="espacio"></div>
+    
+    <!-- seccion de portafolio proyectos -->
+    <section class="secciones" id="portfolio">
+       <div class="contenedor">
+        <div class="content-proyect">
+                <div class="proyecto1">
+                    <a href=""> <img src="../img/evento.png" alt=""></a>
+                    <h2>eventos</h2>
+                </div>
+                <div class="proyecto2">
+                    <a href=""> <img src="../img/portfolio.png" alt=""></a>
+                    <h2>portafolio</h2>
+                </div>
+                <div class="proyecto3">
+                    <a href=""><img src="../img/mapa.png" alt=""></a>
+                    <h2>calendario</h2>
+                </div>
+            </div>
+       </div>
+    </section>
+    
+    <div class="espacio"></div>
+
+    <!-- seccion de contacto -->
+    <section class="secciones" id="contacto">
+        <div class="contenedor">
+            <div class="titulo-contacto">
+                <h2>Contactenos:</h2>
+            </div>
+            <div class="formulario-contacto">
+                <form action="#">
+                    <input type="text" placeholder="nombre" required>
+                    <input type="email" placeholder="correo" required>
+                    <input type="text" placeholder="telefono" required>
+                    <input type="text" placeholder="su mensaje" id="mensaje" required>
+                    <input type="submit" value="enviar" class="boton">
+                </form>
+            </div>
+            <div class="informacion-contacto">
+                <h3>Informacion de Contacto:</h3>
+                <div class="localidad">
+                    <p>Argentina</p>
+                    <p>Buenos Aires</p>
+                    <p>Chascomus</p>
+                </div>
+                <div class="contactame">
+                    <p>telefono: +2241562603</p>
+                    <p id="seguir">Sigueme en:</p>
+                    <div class="redes">
+                        <img src="../icons/facebook.svg" alt="">
+                        <img src="../icons/instagram.svg" alt="">
+                        <img src="../icons/youtube.svg" alt="">
+                        <img src="../icons/twitter.svg" alt="">
+                        <img src="../icons/mail (1).svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
